@@ -21,7 +21,12 @@ const HeroBanner = () => {
           <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white uppercase font-bold text-sm">
             Watch Live
           </p>
+        <div className="smallBoxesWithinWatchLiveTopLeft absolute bg-black h-[3px] w-[3px]"></div>
+        <div className="smallBoxesWithinWatchLiveBottomRight absolute bottom-0 right-0 bg-black h-[3px] w-[3px]"></div>
+
         </div>
+
+
 
         <div className="vidBackground">
           <div className="videoLoop">
