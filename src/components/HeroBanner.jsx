@@ -12,6 +12,12 @@ const HeroBanner = () => {
         <div className="redBox absolute top-[150px] translate-x-[106px] bg-red-500 h-4 w-4"></div>
         <div className="redTriangle absolute top-[152px] translate-x-[116px] bg-red-500 h-3 w-3 rotate-45"></div>
         <div className="whiteCutOut absolute bottom-[10px] -translate-x-[40px] bg-white h-20 w-20 rotate-45"></div>
+        <div className="redBox absolute bottom-[230px] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-red-500 h-[60px] w-[250px]">
+          <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white uppercase font-bold text-sm">
+            Watch Live
+          </p>
+        </div>
+
         <div className="vidBackground">
           <div className="videoLoop">
             <ReactPlayer
