@@ -12,7 +12,9 @@ const HeroBanner = () => {
         <div className="redBox absolute top-[150px] translate-x-[106px] bg-red-500 h-4 w-4"></div>
         <div className="redTriangle absolute top-[152px] translate-x-[116px] bg-red-500 h-3 w-3 rotate-45"></div>
         <div className="whiteCutOut absolute bottom-[10px] -translate-x-[40px] bg-white h-20 w-20 rotate-45"></div>
-        <div className="redBox absolute bottom-[230px] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-red-500 h-[60px] w-[250px]">
+        <div className="whiteBracketsRedBoxTop left-1/2 transform -translate-x-1/2 absolute bottom-[289px] border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px]"></div>
+        <div className="whiteBracketsRedBoxBottom left-1/2 transform -translate-x-1/2 absolute bottom-[242px] border-b-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px]"></div>
+        <div className="redBox absolute bottom-[230px] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-red-500 h-[60px] w-[238px]">
           <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white uppercase font-bold text-sm">
             Watch Live
           </p>
