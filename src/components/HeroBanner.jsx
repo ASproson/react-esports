@@ -1,5 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import '../App.css';
+
 
 const HeroBanner = () => {
   const videoUrl =
@@ -43,7 +45,7 @@ const HeroBanner = () => {
 
 
         
-        <div className="vidBackground border-2 border-blue-500">
+        <div className="vidBackground">
         {/* <div className="h-20 w-20 bg-red-500 mt-40 z-40 relative">test</div> */}
           <ReactPlayer
             url={videoUrl}
@@ -52,7 +54,6 @@ const HeroBanner = () => {
             loop={true}
             width={"100%"}
             height={"100%"}
-            style={{ border: "2px solid red", zIndex: '-10', marginTop: '-450px' }}
           />
         </div>
       </div>
