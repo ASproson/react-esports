@@ -11,6 +11,9 @@ module.exports = {
       screens: {
         '3xl': '2000px',
         '25xl': '1800px'
+      },
+      colors: {
+        'offWhite': '#ECE8E1'
       }
     },
   },
