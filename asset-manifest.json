@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-esports/static/css/main.fb3ed9ef.css",
+    "main.js": "/react-esports/static/js/main.6ebe49ec.js",
+    "static/media/Valorant.ttf": "/react-esports/static/media/Valorant.86ec8370af32018a2391.ttf",
+    "index.html": "/react-esports/index.html",
+    "main.fb3ed9ef.css.map": "/react-esports/static/css/main.fb3ed9ef.css.map",
+    "main.6ebe49ec.js.map": "/react-esports/static/js/main.6ebe49ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb3ed9ef.css",
+    "static/js/main.6ebe49ec.js"
+  ]
+}
