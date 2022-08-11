@@ -1,16 +1,15 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import '../App.css';
-
+import "../App.css";
 
 const HeroBanner = () => {
   const videoUrl =
     "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt714eaee50b90fc27/62cc7dcc6a8fb133b0ff7e55/VALORANT_ANNO22_SHATTERED_16x9_27s.mp4";
   return (
-    <div className="border-2 border-black bg-black fixed w-full">
+    <div className=" bg-black fixed w-full">
       <div className="flex flex-col">
         <div className="whiteBoxLeft absolute left-[32%] transform -translate-x-1/2 border-l-[1.5px] border-r-[1.5px] border-white opacity-25 h-full z-10 w-[310px] shadow-2xl"></div>
-        <div className="whiteBoxRight absolute top-20 transform -translate-x-1/2 right-[14%] border-l-[1.5px] border-white opacity-25 h-full -mt-12 z-10 w-[200px] shadow-2xl"></div>
+        <div className="whiteBoxRight absolute transform -translate-x-1/2 right-[14%] border-l-[1.5px] border-white opacity-25 h-full z-10 w-[200px] shadow-2xl"></div>
 
         <div className="redBox absolute top-[150px] transform left-[26.2%] -translate-x-1/2 bg-red-500 h-4 w-4"></div>
         <div className="redTriangle absolute top-[152px] transform -translate-x-1/2 left-[26.5%] bg-red-500 h-3 w-3 rotate-45"></div>
@@ -43,17 +42,17 @@ const HeroBanner = () => {
           </div>
         </div>
 
-
-        
-        <div className="vidBackground">
-        {/* <div className="h-20 w-20 bg-red-500 mt-40 z-40 relative">test</div> */}
+        <div className="vidBackground -z-10 -mt-56">
+          {/* <div className="h-20 w-20 bg-red-500 mt-40 z-40 relative">test</div> */}
           <ReactPlayer
             url={videoUrl}
             playing={true}
             muted={true}
             loop={true}
             width={"100%"}
-            height={"100%"}
+            height={"900px"}
+            // height={'100%'}
+            style={{}}
           />
         </div>
       </div>

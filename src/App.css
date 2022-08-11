@@ -1,6 +1,4 @@
-.vidBackground {
-  border: 2px solid red;
-  position: relative;
-  z-index: -10;
+.player {
+  border: 2px solid blue;
 }
 
