@@ -42,7 +42,7 @@ const HeroBanner = () => {
           </div>
         </div>
 
-        <div className="vidBackground -z-10 -mt-56">
+        <div className="vidBackground -z-10 lg:-mt-[300px] md:-mt-[450px] -mt-[470px]">
           {/* <div className="h-20 w-20 bg-red-500 mt-40 z-40 relative">test</div> */}
           <ReactPlayer
             url={videoUrl}
@@ -50,7 +50,7 @@ const HeroBanner = () => {
             muted={true}
             loop={true}
             width={"100%"}
-            height={"900px"}
+            height={"1200px"}
             // height={'100%'}
             style={{}}
           />
