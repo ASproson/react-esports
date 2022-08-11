@@ -11,10 +11,12 @@ const HeroBanner = () => {
         <div className="whiteBoxLeft absolute left-[32%] transform -translate-x-1/2 border-l-[1.5px] border-r-[1.5px] border-white opacity-25 h-full z-10 w-[310px] shadow-2xl"></div>
         <div className="whiteBoxRight absolute transform -translate-x-1/2 right-[14%] border-l-[1.5px] border-white opacity-25 h-full z-10 w-[200px] shadow-2xl"></div>
 
-        <div className="redSquare absolute top-[150px] transform left-[26.2%] -translate-x-1/2 bg-red-500 h-4 w-4"></div>
-        <div className="redTriangle absolute top-[152px] transform -translate-x-1/2 left-[26.5%] bg-red-500 h-3 w-3 rotate-45"></div>
+        <div className="squareTriangle absolute left-[130px] sm:hidden">
+          <div className="redSquare absolute top-[150px] bg-red-500 h-4 w-4"></div>
+          <div className="redTriangle absolute top-[152px] ml-[9px]  bg-red-500 h-3 w-3 rotate-45"></div>
+        </div>
 
-        {/* <div className="whiteCutOut absolute bottom-[95px] -translate-x-[45px] bg-red-600 h-20 w-20 rotate-45"></div> */}
+        <div className="whiteCutOut absolute -bottom-[58px] -left-[12px] -translate-x-[45px] bg-white h-28 w-28 rotate-45"></div>
 
         <div className="Hero Text">
           <div className="absolute top-[100px] xl:top-[150px] 3xl:top-1/3 transform left-1/2 -translate-x-1/2 ">
