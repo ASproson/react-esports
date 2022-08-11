@@ -13,10 +13,10 @@ const HeroBanner = () => {
 
         <div className="squareTriangle absolute left-[130px] sm:hidden">
           <div className="redSquare absolute top-[150px] bg-red-500 h-4 w-4"></div>
-          <div className="redTriangle absolute top-[152px] ml-[9px]  bg-red-500 h-3 w-3 rotate-45"></div>
+          <div className="redTriangle absolute top-[152px] ml-[9px] bg-red-500 h-3 w-3 rotate-45"></div>
         </div>
 
-        <div className="whiteCutOut absolute -bottom-[58px] -left-[12px] -translate-x-[45px] bg-white h-28 w-28 rotate-45"></div>
+        <div className="whiteCutOut absolute -bottom-[58px] -left-[12px] -translate-x-[45px] bg-offWhite h-28 w-28 rotate-45"></div>
 
         <div className="Hero Text">
           <div className="absolute top-[100px] xl:top-[150px] 3xl:top-1/3 transform left-1/2 -translate-x-1/2 ">
