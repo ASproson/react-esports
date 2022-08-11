@@ -23,7 +23,7 @@ const HeroBanner = () => {
             <h1 className="font-valorant text-red-500 text-[40px] xl:text-[60px] 3xl:text-[90px] ">
               The Latest Events
             </h1>
-            <h1 className="font-valorant text-white text-[20px]">
+            <h1 className="font-valorant text-white text-[15px] lg:text-[20px]">
               The place for tactical shooter news
             </h1>
           </div>
