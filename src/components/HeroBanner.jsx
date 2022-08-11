@@ -15,14 +15,23 @@ const HeroBanner = () => {
 
         <div className="whiteCutOut absolute bottom-[95px] -translate-x-[45px] bg-white h-20 w-20 rotate-45"></div>
 
-        <div className="absolute top-1/3 transform left-1/2 -translate-x-1/2 ">
-          <h1 className="font-valorant text-white text-[90px]">
-            The Latest Events
-          </h1>
-          <h1 className="font-valorant text-white text-[20px]">
-            The place for tactical shooter news
-          </h1>
+
+
+
+        <div className="Hero Text">
+          <div className="absolute top-[100px] xl:top-[150px] 3xl:top-1/3 transform left-1/2 -translate-x-1/2 ">
+            <h1 className="font-valorant text-red-500 text-[40px] xl:text-[60px] 3xl:text-[90px] ">
+              The Latest Events
+            </h1>
+            <h1 className="font-valorant text-white text-[20px]">
+              The place for tactical shooter news
+            </h1>
+          </div>
         </div>
+
+
+
+
 
         <div className="WatchLiveButtonContainer absolute left-1/2 transform -translate-x-1/2 bottom-[47.5%]">
           <div className="White Brackets">
