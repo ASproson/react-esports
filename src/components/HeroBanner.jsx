@@ -24,14 +24,19 @@ const HeroBanner = () => {
           </h1>
         </div>
 
-        <div className="whiteBracketsRedBoxTop left-1/2 transform -translate-x-1/2 absolute bottom-[47.5%] border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px]"></div>
-        <div className="whiteBracketsRedBoxBottom left-1/2 transform -translate-x-1/2 absolute bottom-[43.9%] border-b-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px]"></div>
-        <div className="redBox absolute bottom-[43%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-red-500 h-[60px] w-[238px]">
-          <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white uppercase font-bold text-sm">
-            Watch Live
-          </p>
-          <div className="smallBoxesWithinWatchLiveTopLeft absolute bg-black h-[3px] w-[3px]"></div>
-          <div className="smallBoxesWithinWatchLiveBottomRight absolute bottom-0 right-0 bg-black h-[3px] w-[3px]"></div>
+        <div className="WatchLiveButtonContainer absolute left-1/2 transform -translate-x-1/2 bottom-[47.5%]">
+          <div className="White Brackets">
+            <div className="Top border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -top-[10px]"></div>
+            <div className="Bottom border-b-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -bottom-[10px]"></div>
+          </div>
+
+          <div className="RedBox bg-red-500 h-[60px] w-[238px]">
+            <p className=" text-white uppercase font-bold text-sm absolute left-1/2 transform -translate-x-1/2 top-[18px]">
+              Watch Live
+            </p>
+            <div className="smallBoxesWithinWatchLiveTopLeft absolute bg-black h-[3px] w-[3px]"></div>
+            <div className="smallBoxesWithinWatchLiveBottomRight absolute bottom-0 right-0 bg-black h-[3px] w-[3px]"></div>
+          </div>
         </div>
 
         <div className="vidBackground">
