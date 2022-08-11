@@ -25,7 +25,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="navContainer flex bg-black h-20 justify-between sticky">
+    <div className="navContainer flex bg-black h-20 justify-between sticky z-50">
       <div className="leftNav flex mr-6 text-white items-center ml-14">Logo</div>
       <div className="rightNav flex space-x-6 text-[#8FA3B0] items-center mr-14 uppercase font-bold text-sm">
         {navList.map((navEl) => {
