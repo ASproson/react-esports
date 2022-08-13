@@ -7,7 +7,7 @@ const LatestNews = () => {
       id: 1,
       img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
       date:
-        new Date().getDate() +
+        13 +
         " / " +
         (new Date().getMonth() + 1) +
         " / " +
@@ -17,27 +17,28 @@ const LatestNews = () => {
     },
     {
       id: 2,
-      img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
+      img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/bltdad29f65f60eb513/62eb9b7b99dab06ebd13d176/VCT-Off-Season-RedBull-Header_1920x1080.jpg?width=2472&height=1390",
       date:
-        new Date().getDate() +
+        
+        5 +
         " / " +
         (new Date().getMonth() + 1) +
         " / " +
         new Date().getFullYear(),
-      text: "VCT Stage 2 Masters Recap: Return of the Champions",
+      text: "Red Bull Home Ground // Off-season tour announcement",
       alt: "championship winners holding trophy",
     },
     {
-      id: 1,
-      img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
+      id: 3,
+      img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blte641f2bd31733e66/62d6bbc3c75c5836dbd3835c/Valorant_Masters_2022_16x9_V12.jpg?width=2472&height=1390",
       date:
-        new Date().getDate() +
+        2 +
         " / " +
         (new Date().getMonth() + 1) +
         " / " +
         new Date().getFullYear(),
-      text: "VCT Stage 2 Masters Recap: Return of the Champions",
-      alt: "championship winners holding trophy",
+      text: "Valorant Masters // Watch Parties UK & Nordics",
+      alt: "Valorant masters watch parties location maps",
     },
   ];
 
