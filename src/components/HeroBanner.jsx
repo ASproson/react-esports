@@ -54,7 +54,7 @@ const HeroBanner = () => {
           autoPlay
           muted
           loop
-          className="pointer-events-none h-[100%] w-[700px] sm:w-full sm:-mt-[100px] md:-mt-[150px]"
+          className="pointer-events-none h-[100%] w-[100%]  sm:-mt-[100px] md:-mt-[150px]"
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
