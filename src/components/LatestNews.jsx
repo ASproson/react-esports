@@ -67,11 +67,11 @@ const LatestNews = () => {
             {articles.map((article) => {
               return (
                 <div key={article.id} className="mb-4">
-                  <div className="rounded-sm hover:bg-red-500 duration-300 ease-in">
+                  <div className="rounded-sm hover:bg-red-500 duration-200 ease-in">
                     <img
                       src={article.img}
-                      alt="Champsionship winners"
-                      className="h-full w-full rounded-sm cursor-pointer hover:opacity-50 duration-300 ease-in"
+                      alt={article.alt}
+                      className="h-full w-full rounded-sm cursor-pointer hover:opacity-50 duration-200 ease-in"
                     />
                   </div>
                   <div className="font-valorantStandard">
