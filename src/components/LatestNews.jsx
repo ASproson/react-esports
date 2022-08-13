@@ -63,15 +63,15 @@ const LatestNews = () => {
         </div>
 
         <section className="Latest Articles relative -top-[145px] ml-5 mr-5">
-          <div className="">
+          <div>
             {articles.map((article) => {
               return (
                 <div key={article.id} className="mb-4">
-                  <div>
+                  <div className="rounded-sm hover:bg-red-500 duration-300 ease-in">
                     <img
                       src={article.img}
                       alt="Champsionship winners"
-                      className="h-[300px] w-[500px] rounded-sm cursor-pointer"
+                      className="h-full w-full rounded-sm cursor-pointer hover:opacity-50 duration-300 ease-in"
                     />
                   </div>
                   <div className="font-valorantStandard">
