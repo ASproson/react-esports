@@ -7,7 +7,6 @@ You can view the live deployment [here](https://asproson.github.io/react-esports
 ## Tech Used
 
 - React
-- React Player
 - Tailwind CSS
 
 ## Installation
