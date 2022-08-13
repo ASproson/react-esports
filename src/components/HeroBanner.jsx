@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import "../App.css";
 
 const HeroBanner = () => {
@@ -44,17 +43,11 @@ const HeroBanner = () => {
           </div>
         </div>
 
-        <div className="vidBackground -z-10 lg:-mt-[300px] md:-mt-[450px] -mt-[470px]">
-          <ReactPlayer
-            url={videoUrl}
-            playing={true}
-            muted={true}
-            loop={true}
-            width={"100%"}
-            height={"1200px"}
-            // height={'100%'}
-            style={{}}
-          />
+
+        <div className="vidBackground -z-10">
+          <video controls autoPlay muted loop className="pointer-events-none h-[100%] w-[700px] sm:w-full sm:-mt-[100px] md:-mt-[150px]">
+            <source src={videoUrl} type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
