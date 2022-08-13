@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        valorant: ['valorant']
+        valorant: ['valorant'],
+        valorantStandard: ['Bebas Neue'],
       },
       screens: {
         '3xl': '2000px',

@@ -6,34 +6,25 @@ const LatestNews = () => {
     {
       id: 1,
       img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
-      text: "Lorem 1",
-      alt: 'Championship winners'
+      date: new Date().getDate() + ' / ' + (new Date().getMonth() + 1) + ' / ' + new Date().getFullYear(),
+      text: "VCT Stage 2 Masters Recap: Return of the Champions",
+      alt: 'championship winners holding trophy'
     },
-    // {
-    //   id: 2,
-    //   img: "",
-    //   text: "Lorem 2",
-    // },
-    // {
-    //   id: 3,
-    //   img: "",
-    //   text: "Lorem 3",
-    // },
-    // {
-    //   id: 4,
-    //   img: "",
-    //   text: "Lorem 4",
-    // },
-    // {
-    //   id: 5,
-    //   img: "",
-    //   text: "Lorem 5",
-    // },
-    // {
-    //   id: 6,
-    //   img: "",
-    //   text: "Lorem 6",
-    // },
+    {
+      id: 2,
+      img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
+      date: new Date().getDate() + ' / ' + (new Date().getMonth() + 1) + ' / ' + new Date().getFullYear(),
+      text: "VCT Stage 2 Masters Recap: Return of the Champions",
+      alt: 'championship winners holding trophy'
+    },
+    {
+      id: 1,
+      img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
+      date: new Date().getDate() + ' / ' + (new Date().getMonth() + 1) + ' / ' + new Date().getFullYear(),
+      text: "VCT Stage 2 Masters Recap: Return of the Champions",
+      alt: 'championship winners holding trophy'
+    },
+
   ];
 
   return (
@@ -56,15 +47,20 @@ const LatestNews = () => {
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[150px]">
-          <div className="border-2 border-red-500">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5">
+          <div className="">
             {articles.map((article) => {
               return (
-                <div key={article.id}>
+                <div key={article.id} className="mb-4">
                   <div>
-                    <img src={article.img} alt="Champsionship winners" className="h-[300px] w-[500px]"/>
+                    <img src={article.img} alt="Champsionship winners" className="h-[300px] w-[500px] rounded-sm"/>
                     </div>
-                  <div>{article.text}</div>
+                  <div className="mt-3 font-valorantStandard">
+                    {article.date}
+                  </div>
+                  <div className="mt-2 font-valorantStandard">
+                    {article.text}
+                  </div>
                 </div>
               );
             })}
