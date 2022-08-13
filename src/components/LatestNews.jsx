@@ -11,11 +11,18 @@ const LatestNews = () => {
           <div className="bg-red-500 h-2 w-2"></div>
         </div>
 
-        <div className="stencil">
+        <div className="Stencil">
           <h1 className="text-[200px] uppercase whitespace-nowrap -mt-[40px] -ml-[50px] font-valorant opacity-5 text-center">
-            champions
+            champions are made
           </h1>
         </div>
+
+        <div className="Title relative -top-[145px] left-[79px]">
+            <h2 className="text-[50px] text-red-500 uppercase font-valorant font-bold">
+                Latest News
+            </h2>
+        </div>
+
       </div>
     </div>
   );
