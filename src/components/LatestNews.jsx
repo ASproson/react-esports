@@ -6,25 +6,39 @@ const LatestNews = () => {
     {
       id: 1,
       img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
-      date: new Date().getDate() + ' / ' + (new Date().getMonth() + 1) + ' / ' + new Date().getFullYear(),
-      text: "VCT Stage 2 Masters Recap: Return of the Champions",
-      alt: 'championship winners holding trophy'
+      date:
+        new Date().getDate() +
+        " / " +
+        (new Date().getMonth() + 1) +
+        " / " +
+        new Date().getFullYear(),
+      text: "VCT Stage 2 Masters Recap // Return of the Champions",
+      alt: "championship winners holding trophy",
     },
     {
       id: 2,
       img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
-      date: new Date().getDate() + ' / ' + (new Date().getMonth() + 1) + ' / ' + new Date().getFullYear(),
+      date:
+        new Date().getDate() +
+        " / " +
+        (new Date().getMonth() + 1) +
+        " / " +
+        new Date().getFullYear(),
       text: "VCT Stage 2 Masters Recap: Return of the Champions",
-      alt: 'championship winners holding trophy'
+      alt: "championship winners holding trophy",
     },
     {
       id: 1,
       img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt40e206aa5fefb384/62e147e0a30ae37191c61d96/VCT_Stage_2_Masters_Recap_Header.jpg?width=2472&height=1390",
-      date: new Date().getDate() + ' / ' + (new Date().getMonth() + 1) + ' / ' + new Date().getFullYear(),
+      date:
+        new Date().getDate() +
+        " / " +
+        (new Date().getMonth() + 1) +
+        " / " +
+        new Date().getFullYear(),
       text: "VCT Stage 2 Masters Recap: Return of the Champions",
-      alt: 'championship winners holding trophy'
+      alt: "championship winners holding trophy",
     },
-
   ];
 
   return (
@@ -53,13 +67,17 @@ const LatestNews = () => {
               return (
                 <div key={article.id} className="mb-4">
                   <div>
-                    <img src={article.img} alt="Champsionship winners" className="h-[300px] w-[500px] rounded-sm"/>
-                    </div>
-                  <div className="mt-3 font-valorantStandard">
-                    {article.date}
+                    <img
+                      src={article.img}
+                      alt="Champsionship winners"
+                      className="h-[300px] w-[500px] rounded-sm cursor-pointer"
+                    />
                   </div>
-                  <div className="mt-2 font-valorantStandard">
-                    {article.text}
+                  <div className="font-valorantStandard">
+                    <div className="mt-3 text-2xl">{article.date}</div>
+                    <div className="text-3xl cursor-pointer">
+                      {article.text}
+                    </div>
                   </div>
                 </div>
               );
