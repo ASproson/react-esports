@@ -5,7 +5,7 @@ const HeroBanner = () => {
   const videoUrl =
     "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt714eaee50b90fc27/62cc7dcc6a8fb133b0ff7e55/VALORANT_ANNO22_SHATTERED_16x9_27s.mp4";
   return (
-    <div className="bg-black fixed w-full h-[600px] sm:h-fit">
+    <div className="bg-black  w-full h-[600px] sm:h-fit relative">
       <div className="whiteLines">
         <div className="whiteBoxLeft absolute left-[32%] transform -translate-x-1/2 h-full w-[310px]">
           <div className="border-l-[1.5px] border-r-[1.5px] w-full h-full opacity-30"></div>
