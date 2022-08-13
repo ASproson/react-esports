@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import "../App.css";
 
 const LatestNews = () => {
-    return (
-        <div className='text-3xl border-2 border-red-500 h-[500px] w-[400px] relative'>
-           test
+  return (
+    <div>
+      <div className="relative">
+        <div className="stencil">
+          <h1 className="text-[200px] uppercase whitespace-nowrap -mt-[40px] -ml-[50px] font-valorant opacity-5 text-center">
+            champions
+          </h1>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default LatestNews;
