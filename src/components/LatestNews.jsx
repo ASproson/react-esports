@@ -105,17 +105,17 @@ const LatestNews = () => {
           </h1>
         </div>
 
-        <div className="Title relative -top-[130px] ml-[20px] lg:left-1/4">
+        <div className="Title relative -top-[130px] ml-[20px] lg:left-[15%]">
           <h2 className="text-[50px] text-red-500 uppercase font-valorant font-bold">
             Latest News
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px]">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px] flex flex-wrap">
           {articles.slice(0, readMore).map((article) => {
             return (
-              <div key={article.id} className="relative inline-block lg:left-1/4 lg:mr-10">
-                <div className="relative mb-4 ">
+              <div key={article.id} className="relative lg:left-[15%] lg:mr-10">
+                <div className="relative mb-4">
                   <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px] md:h-[400px] md:w-[750px]">
                     <img
                       src={article.img}
@@ -133,7 +133,7 @@ const LatestNews = () => {
               </div>
             );
           })}
-          <div className="relative left-[42%] font-valorantStandard hover:text-red-500 duration-200 ease-in">
+          <div className="relative left-[35%] font-valorantStandard hover:text-red-500 duration-200 ease-in text-3xl">
             <button onClick={() => handleReadMoreToggle()}>
               {!readMoreClicked ? "Show more" : "Show less"}
             </button>
