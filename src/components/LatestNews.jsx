@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../App.css";
+import { BsChevronDoubleDown } from 'react-icons/bs'
 
 const LatestNews = () => {
   const [readMore, setReadMore] = useState(3);
@@ -133,11 +134,11 @@ const LatestNews = () => {
               </div>
             );
           })}
-          <div className="relative left-[35%] font-valorantStandard hover:text-red-500 duration-200 ease-in text-3xl">
-            <button onClick={() => handleReadMoreToggle()}>
+          <div className="relative left-[35%] font-valorantStandard text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in" onClick={() => handleReadMoreToggle()}>
+            <button className="">
               {!readMoreClicked ? "Show more" : "Show less"}
             </button>
-            {/* <p>icon</p> */}
+            <p className="relative left-[37%] animate-bounce "><BsChevronDoubleDown /></p>
           </div>
         </section>
       </div>
