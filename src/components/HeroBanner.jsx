@@ -5,25 +5,25 @@ const HeroBanner = () => {
   const videoUrl =
     "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt714eaee50b90fc27/62cc7dcc6a8fb133b0ff7e55/VALORANT_ANNO22_SHATTERED_16x9_27s.mp4";
   return (
-    <div className="bg-black fixed w-full h-[600px] sm:h-fit">
+    <div className="bg-black  w-full h-[600px] sm:h-fit relative">
       <div className="whiteLines">
         <div className="whiteBoxLeft absolute left-[32%] transform -translate-x-1/2 h-full w-[310px]">
           <div className="border-l-[1.5px] border-r-[1.5px] w-full h-full opacity-30"></div>
-          <div className="redSquare absolute top-[150px] bg-red-500 h-4 w-4 hidden sm:block"></div>
-          <div className="redTriangle absolute top-[152px] ml-[9px] bg-red-500 h-3 w-3 rotate-45 hidden sm:block"></div>
+          <div className="redSquare absolute top-[150px] sm:top-[250px] md:top-[340px] bg-red-500 h-4 w-4 hidden sm:block"></div>
+          <div className="redTriangle absolute top-[152px] sm:top-[252px] md:top-[342px] ml-[9px] bg-red-500 h-3 w-3 rotate-45 hidden sm:block"></div>
         </div>
 
         <div className="whiteBoxRight absolute transform -translate-x-1/2 right-[14%] h-full w-[200px]">
           <div className="border-l-[1.5px] border-gray-400 w-full h-full opacity-30 z-0"></div>
-          <div className="redSquare absolute top-[150px] bg-red-500 h-4 w-4  sm:hidden"></div>
-          <div className="redTriangle absolute top-[152px] ml-[9px] bg-red-500 h-3 w-3 rotate-45  sm:hidden"></div>
+          <div className="redSquare absolute top-[150px] bg-red-500 h-4 w-4 sm:hidden"></div>
+          <div className="redTriangle absolute top-[152px] ml-[9px] bg-red-500 h-3 w-3 rotate-45 sm:hidden"></div>
         </div>
       </div>
 
       <div className="whiteCutOut absolute -bottom-[58px] -left-[12px] -translate-x-[45px] bg-offWhite h-28 w-28 rotate-45"></div>
 
       <div className="Hero Text">
-        <div className="absolute top-[100px] md:top-[0px] xl:top-[150px] 3xl:top-1/3 transform left-1/2 -translate-x-1/2 ">
+        <div className="absolute top-[100px] md:top-1/3 transform left-1/2 -translate-x-1/2 ">
           <h1 className="font-valorant text-red-500 text-center text-[40px] xl:text-[60px] 3xl:text-[90px] mt-[90px] xl:mt-0 z-20">
             The Latest Events
           </h1>
@@ -54,7 +54,7 @@ const HeroBanner = () => {
           autoPlay
           muted
           loop
-          className="pointer-events-none h-[100%] w-[700px] sm:w-full sm:-mt-[100px] md:-mt-[150px]"
+          className="pointer-events-none h-[100%] w-[100%]  sm:-mt-[100px] md:-mt-[150px]"
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
