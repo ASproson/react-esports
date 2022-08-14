@@ -1,5 +1,6 @@
 body {
     background-color: #ECE8E1;
+    overflow-x: hidden
 }
 
 .stencil {
