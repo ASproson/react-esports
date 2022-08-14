@@ -61,13 +61,13 @@ const LatestNews = () => {
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px]">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] border-2">
           <div>
             {articles.map((article) => {
               return (
-                <div className="relative inline-block lg:left-1/4">
+                <div className="relative inline-block lg:left-1/4 lg:mr-10">
                   <div key={article.id} className="relative mb-4 ">
-                    <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[400px] lg:w-[700px]">
+                    <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px]">
                       <img
                         src={article.img}
                         alt={article.alt}
@@ -76,7 +76,7 @@ const LatestNews = () => {
                     </div>
                     <div className="font-valorantStandard">
                       <div className="mt-3 text-2xl">{article.date}</div>
-                      <div className="text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in">
+                      <div className="text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in lg:w-[400px]">
                         {article.text}
                       </div>
                     </div>
