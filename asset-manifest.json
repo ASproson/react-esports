@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-esports/static/css/main.fb3ed9ef.css",
-    "main.js": "/react-esports/static/js/main.6ebe49ec.js",
+    "main.css": "/react-esports/static/css/main.fc49634e.css",
+    "main.js": "/react-esports/static/js/main.ac88f89e.js",
     "static/media/Valorant.ttf": "/react-esports/static/media/Valorant.86ec8370af32018a2391.ttf",
     "index.html": "/react-esports/index.html",
-    "main.fb3ed9ef.css.map": "/react-esports/static/css/main.fb3ed9ef.css.map",
-    "main.6ebe49ec.js.map": "/react-esports/static/js/main.6ebe49ec.js.map"
+    "main.fc49634e.css.map": "/react-esports/static/css/main.fc49634e.css.map",
+    "main.ac88f89e.js.map": "/react-esports/static/js/main.ac88f89e.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb3ed9ef.css",
-    "static/js/main.6ebe49ec.js"
+    "static/css/main.fc49634e.css",
+    "static/js/main.ac88f89e.js"
   ]
 }
