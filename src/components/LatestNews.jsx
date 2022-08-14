@@ -76,7 +76,7 @@ const LatestNews = () => {
                   </div>
                   <div className="font-valorantStandard">
                     <div className="mt-3 text-2xl">{article.date}</div>
-                    <div className="text-3xl cursor-pointer">
+                    <div className="text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in">
                       {article.text}
                     </div>
                   </div>
