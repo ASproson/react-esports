@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 import "../App.css";
 
@@ -112,12 +111,12 @@ const LatestNews = () => {
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] border-2">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px]">
           {articles.slice(0, readMore).map((article) => {
             return (
               <div className="relative inline-block lg:left-1/4 lg:mr-10">
                 <div key={article.id} className="relative mb-4 ">
-                  <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px]">
+                  <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px] md:h-[400px] md:w-[750px]">
                     <img
                       src={article.img}
                       alt={article.alt}
