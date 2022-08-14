@@ -94,18 +94,18 @@ const LatestNews = () => {
   return (
     <div>
       <div className="relative">
-        <div className="relative flex left-[45%] sm:left-[50%] top-[30px] space-x-11">
-          <div className="bg-red-500 h-2 w-2"></div>
-          <div className="bg-red-500 h-2 w-2"></div>
+        <div className=" flex ml-[45%] sm:left-[50%] space-x-12">
+          <div className="bg-red-500 h-2 w-2 absolute top-[30px]"></div>
+          <div className="bg-red-500 h-2 w-2 absolute top-[30px]"></div>
         </div>
 
-        <div className="Stencil">
+        <div className="Stencil overflow-hidden">
           <h1 className="text-[175px] uppercase whitespace-nowrap -mt-[40px] -ml-[50px] font-valorant opacity-5 text-center">
             champions are made
           </h1>
         </div>
 
-        <div className="Title relative -top-[130px] left-[79px] lg:left-1/4">
+        <div className="Title relative -top-[130px] ml-[20px] lg:left-1/4">
           <h2 className="text-[50px] text-red-500 uppercase font-valorant font-bold">
             Latest News
           </h2>
@@ -114,8 +114,8 @@ const LatestNews = () => {
         <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px]">
           {articles.slice(0, readMore).map((article) => {
             return (
-              <div className="relative inline-block lg:left-1/4 lg:mr-10">
-                <div key={article.id} className="relative mb-4 ">
+              <div key={article.id} className="relative inline-block lg:left-1/4 lg:mr-10">
+                <div className="relative mb-4 ">
                   <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px] md:h-[400px] md:w-[750px]">
                     <img
                       src={article.img}
