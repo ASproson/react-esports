@@ -19,7 +19,6 @@ const LatestNews = () => {
       id: 2,
       img: "https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/bltdad29f65f60eb513/62eb9b7b99dab06ebd13d176/VCT-Off-Season-RedBull-Header_1920x1080.jpg?width=2472&height=1390",
       date:
-        
         5 +
         " / " +
         (new Date().getMonth() + 1) +
@@ -56,28 +55,30 @@ const LatestNews = () => {
           </h1>
         </div>
 
-        <div className="Title relative -top-[130px] left-[79px]">
+        <div className="Title relative -top-[130px] left-[79px] lg:left-1/4">
           <h2 className="text-[50px] text-red-500 uppercase font-valorant font-bold">
             Latest News
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[145px] ml-5 mr-5">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px]">
           <div>
             {articles.map((article) => {
               return (
-                <div key={article.id} className="mb-4">
-                  <div className="rounded-sm hover:bg-red-500 duration-200 ease-in">
-                    <img
-                      src={article.img}
-                      alt={article.alt}
-                      className="h-full w-full rounded-sm cursor-pointer hover:opacity-50 duration-200 ease-in"
-                    />
-                  </div>
-                  <div className="font-valorantStandard">
-                    <div className="mt-3 text-2xl">{article.date}</div>
-                    <div className="text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in">
-                      {article.text}
+                <div className="relative inline-block lg:left-1/4">
+                  <div key={article.id} className="relative mb-4 ">
+                    <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[400px] lg:w-[700px]">
+                      <img
+                        src={article.img}
+                        alt={article.alt}
+                        className="h-full w-full rounded-sm cursor-pointer hover:opacity-50 duration-200 ease-in"
+                      />
+                    </div>
+                    <div className="font-valorantStandard">
+                      <div className="mt-3 text-2xl">{article.date}</div>
+                      <div className="text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in">
+                        {article.text}
+                      </div>
                     </div>
                   </div>
                 </div>
