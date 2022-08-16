@@ -112,7 +112,7 @@ const LatestNews = () => {
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px] flex flex-wrap">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px] flex flex-wrap border-2 border-blue-500">
           {articles.slice(0, readMore).map((article) => {
             return (
               <div key={article.id} className="relative lg:left-[15%] lg:mr-10">
@@ -134,11 +134,11 @@ const LatestNews = () => {
               </div>
             );
           })}
-          <div className="relative left-[35%] font-valorantStandard text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in" onClick={() => handleReadMoreToggle()}>
+          <div className="font-valorantStandard text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in mx-auto" onClick={() => handleReadMoreToggle()}>
             <button className="">
               {!readMoreClicked ? "Show more" : "Show less"}
             </button>
-            <p className="relative left-[37%] animate-bounce "><BsChevronDoubleDown /></p>
+            <p className="animate-bounce flex justify-center mt-2"><BsChevronDoubleDown /></p>
           </div>
         </section>
       </div>
