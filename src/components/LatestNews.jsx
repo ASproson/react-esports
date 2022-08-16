@@ -112,7 +112,7 @@ const LatestNews = () => {
           </h2>
         </div>
 
-        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px] flex flex-wrap border-2 border-blue-500">
+        <section className="Latest Articles relative -top-[145px] ml-5 mr-5 lg:ml-[10px] md:ml-[80px] flex flex-wrap">
           {articles.slice(0, readMore).map((article) => {
             return (
               <div key={article.id} className="relative lg:left-[15%] lg:mr-10">
