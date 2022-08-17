@@ -135,7 +135,7 @@ const LatestNews = () => {
             );
           })}
         </section>
-        <div className="Show More Button w-[115px] mx-auto">
+        <div className="Show More Button w-[115px] mx-auto mt-8">
           <div
             className="font-valorantStandard text-3xl cursor-pointer hover:text-red-500 duration-200 ease-in mx-auto text-center"
             onClick={() => handleReadMoreToggle()}
