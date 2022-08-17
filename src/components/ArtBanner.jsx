@@ -5,7 +5,7 @@ const dimensionArtBanner = 'https://images.contentstack.io/v3/assets/bltb6530b27
 const ArtBanner = () => {
     return (
         <div>
-            <img src={dimensionArtBanner}  alt='Valorant Dimension season art banner'/>
+            <img src={dimensionArtBanner}  alt='Valorant Dimension season art banner' className='object-none h-[50vh] mb-20 mt-5'/>
         </div>
     );
 };
