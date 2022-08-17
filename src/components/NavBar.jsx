@@ -46,7 +46,7 @@ const NavBar = () => {
             </p>
           );
         })}
-        <GiHamburgerMenu className="h-7 w-7 sm:hidden transition duration-200 hover:scale-125 cursor-pointer mt-2" />
+        <GiHamburgerMenu className="h-7 w-7 sm:hidden transition duration-200 hover:scale-125 hover:text-red-500 ease-in cursor-pointer mt-2" />
       </div>
     </div>
   );
