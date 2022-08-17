@@ -11,7 +11,7 @@ const ArtBanner = () => {
         <img
           src={dimensionArtBanner}
           alt="Valorant Dimension season art banner"
-          className="object-none h-[50vh] mb-20 mt-5 w-[100%]"
+          className="object-none h-[50vh] mt-5 w-[100%]"
         />
       </div>
 
