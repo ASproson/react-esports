@@ -29,7 +29,7 @@ const NavBar = () => {
       <div className="leftNav flex mr-6 text-white items-center ml-14">Logo</div>
       <div className="rightNav flex space-x-6 text-[#8FA3B0] items-center mr-14 uppercase font-bold text-sm">
         {navList.map((navEl) => {
-          return <p key={navEl.id} className="cursor-pointer transition duration-200 hover:scale-110 hover:text-white">{navEl.title}</p>;
+          return <p key={navEl.id} className="cursor-pointer transition duration-200 hover:scale-110 hover:text-white hidden sm:block">{navEl.title}</p>;
         })}
       </div>
     </div>
