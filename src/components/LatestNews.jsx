@@ -112,12 +112,12 @@ const LatestNews = () => {
           </h2>
         </div>
 
-        <section className="Latest Articles lg:w-[1250px] lg:grid lg:grid-cols-3 gap-1 -mt-[140px] relative mx-auto border-2 border-blue-500">
+        <section className="Latest Articles lg:w-[1250px] lg:grid lg:grid-cols-3 gap-1 -mt-[140px] relative mx-auto">
           {articles.slice(0, readMore).map((article) => {
             return (
               <div key={article.id} className="flex justify-center ml-2 mr-2">
                 <div className="relative mb-4">
-                  <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px] md:h-[400px] md:w-[750px]">
+                  <div className="rounded-sm hover:bg-red-500 duration-200 ease-in lg:h-[230px] lg:w-[400px] md:h-[300px] md:w-[600px]">
                     <img
                       src={article.img}
                       alt={article.alt}
