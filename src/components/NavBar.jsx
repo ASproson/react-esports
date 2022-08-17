@@ -32,6 +32,7 @@ const NavBar = () => {
       <div className="leftNav flex mr-6 text-white items-center ml-14">
         <img
           src={logoLink}
+          alt='Valorant logo'
           className="h-10 w-10 transition duration-200 hover:scale-150 cursor-pointer"
         />
       </div>
