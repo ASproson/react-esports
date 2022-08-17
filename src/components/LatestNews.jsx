@@ -96,12 +96,12 @@ const LatestNews = () => {
     <div>
       <div className="relative">
         <div className="flex ml-[45%] sm:left-[50%] space-x-12">
-          <div className="bg-red-500 h-2 w-2 absolute top-[30px]"></div>
-          <div className="bg-red-500 h-2 w-2 absolute top-[30px]"></div>
+          <div className="bg-red-500 h-2 w-2 absolute top-[20px] md:top-[30px]"></div>
+          <div className="bg-red-500 h-2 w-2 absolute top-[20px] md:top-[30px]"></div>
         </div>
 
         <div className="Stencil overflow-hidden">
-          <h1 className="text-[175px] uppercase whitespace-nowrap -mt-[40px] -ml-[50px] font-valorant opacity-5 text-center">
+          <h1 className="text-[140px] md:text-[155px] xl:text-[175px] uppercase whitespace-nowrap -mt-[40px] -ml-[50px] font-valorant opacity-5 text-center">
             champions are made
           </h1>
         </div>
