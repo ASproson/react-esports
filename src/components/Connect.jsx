@@ -50,7 +50,7 @@ const Connect = () => {
   ];
 
   return (
-    <div className="bg-black text-white font-valorantStandard">
+    <div className="font-valorantStandard -mt-20">
       {/* Header Text */}
       <div className="flex justify-between">
         <div className="">Vods</div>
@@ -58,11 +58,11 @@ const Connect = () => {
       </div>
 
       {/* Team VOD List */}
-      <div className="flex justify-between border-2 border-blue-500">
+      <div className="flex justify-between border-2 border-blue-500 text-white">
         <div className="w-full">
           {vodList.map((match) => {
             return (
-              <div key={match.id} className="flex justify-between border-2 border-red-500 w-[400px] mt-4 mb-4 ml-6">
+              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800">
                 <div className="flex">
                   <div className="flex items-center">
                     <img src={match.leftIcon} className="h-10 w-10" /> <span className="text-sm ml-2 mr-2">vs</span>
@@ -73,7 +73,7 @@ const Connect = () => {
                     <p>{match.rightTeam}</p>
                   </div>
                 </div>
-                <div className="flex items-center">play</div>
+                <div className="flex items-center mr-6">play</div>
               </div>
             );
           })}
