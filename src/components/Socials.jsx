@@ -22,30 +22,31 @@ const Socials = () => {
       name: "Twitch",
       icon: "https://assets.valorantesports.com/val/twitch.696cd8ca21.svg",
     },
+
   ];
 
   return (
-    <div className="font-valorantStandard md:w-[600px] mx-auto">
+    <div className="font-valorantStandard md:w-[600px]">
       {/* Header Text */}
       <div className="flex justify-between pl-6 pr-6 text-3xl">
-        <div className="transition ease-in-out hover:text-red-500 hover:scale-105">
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer">
           Connect
         </div>
       </div>
 
       {/* Socials List */}
       <div className="flex justify-between text-white">
-        <div className="w-full">
+        <div className="w-full md:w-[600px]">
           {socialLinks.map((link) => {
             return (
               <div
                 key={link.id}
-                className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md"
+                className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px]"
               >
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
-                      <img src={link.icon} className="h-10 w-10 transition ease-in-out hover:scale-110" />
-                    <span className="text-2xl mt-1 ml-10 transition ease-in-out hover:text-red-500 hover:scale-110">{link.name}</span>
+                      <img src={link.icon} className="h-10 w-10 transition ease-in-out hover:scale-110 cursor-pointer" />
+                    <span className="text-2xl mt-1 ml-10 transition ease-in-out hover:text-red-500 hover:scale-110 cursor-pointer">{link.name}</span>
                   </div>
                 </div>
               </div>
