@@ -13,7 +13,7 @@ function App() {
       <LatestNews />
       <ArtBanner />
       <Connect />
-
+      
     </div>
   );
 }
