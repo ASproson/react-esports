@@ -45,7 +45,7 @@ const Socials = () => {
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
                       <img src={link.icon} className="h-10 w-10" />
-                    <span className="text-2xl ml-10">{link.name}</span>
+                    <span className="text-2xl mt-1 ml-10 transition ease-in-out hover:text-red-500 hover:scale-110">{link.name}</span>
                   </div>
                 </div>
               </div>
