@@ -33,7 +33,8 @@ const Connect = () => {
       id: 4,
       leftIcon:
         "https://am-a.akamaihd.net/image?resize=70:70&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2F1630017626481_kru.png",
-      rightIcon: "",
+      rightIcon:
+        "https://am-a.akamaihd.net/image?resize=70:70&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2F1647451114220_M3C_logo_square.png",
       leftTeam: "KRU Esports",
       rightTeam: "FNATIC",
     },
@@ -49,31 +50,35 @@ const Connect = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-black text-white font-valorantStandard">
       {/* Header Text */}
       <div className="flex justify-between">
-        <div className="font-valorantStandard">Vods</div>
-        <div className="font-valorantStandard">View All</div>
+        <div className="">Vods</div>
+        <div className="">View All</div>
       </div>
 
       {/* Team VOD List */}
-      <div className="flex justify-between">
-        <div>
+      <div className="flex justify-between border-2 border-blue-500">
+        <div className="w-full">
           {vodList.map((match) => {
             return (
-              <div key={match.id} className="flex">
+              <div key={match.id} className="flex justify-between border-2 border-red-500 w-[400px] mt-4 mb-4 ml-6">
                 <div className="flex">
-                  <img src={match.leftIcon} /> vs <img src={match.rightIcon} />
+                  <div className="flex items-center">
+                    <img src={match.leftIcon} className="h-10 w-10" /> <span className="text-sm ml-2 mr-2">vs</span>
+                    <img src={match.rightIcon} className="h-10 w-10" />
+                  </div>
+                  <div className="ml-4">
+                    <p>{match.leftTeam}</p>
+                    <p>{match.rightTeam}</p>
+                  </div>
                 </div>
-                <div>
-                  <p>{match.leftTeam}</p>
-                  <p>{match.rightTeam}</p>
-                </div>
+                <div className="flex items-center">play</div>
               </div>
             );
           })}
         </div>
-        <div>play</div>
+        {/* <div>play</div> */}
       </div>
     </div>
   );
