@@ -1,4 +1,5 @@
 import React from "react";
+import { BsPlayCircleFill } from 'react-icons/bs'
 
 const Connect = () => {
   const vodList = [
@@ -50,35 +51,34 @@ const Connect = () => {
   ];
 
   return (
-    <div className="font-valorantStandard -mt-20">
+    <div className="font-valorantStandard -mt-[100px]">
       {/* Header Text */}
-      <div className="flex justify-between">
-        <div className="">Vods</div>
-        <div className="">View All</div>
+      <div className="flex justify-between pl-6 pr-6 text-3xl">
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105">Vods</div>
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105">View All</div>
       </div>
 
       {/* Team VOD List */}
-      <div className="flex justify-between border-2 border-blue-500 text-white">
+      <div className="flex justify-between text-white">
         <div className="w-full">
           {vodList.map((match) => {
             return (
-              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800">
-                <div className="flex">
+              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md">
+                <div className="flex ml-4 p-4">
                   <div className="flex items-center">
-                    <img src={match.leftIcon} className="h-10 w-10" /> <span className="text-sm ml-2 mr-2">vs</span>
+                    <img src={match.leftIcon} className="h-10 w-10" /> <span className="text-sm ml-5 mr-5">vs</span>
                     <img src={match.rightIcon} className="h-10 w-10" />
                   </div>
-                  <div className="ml-4">
+                  <div className="ml-6">
                     <p>{match.leftTeam}</p>
                     <p>{match.rightTeam}</p>
                   </div>
                 </div>
-                <div className="flex items-center mr-6">play</div>
+                <div className="flex items-center mr-6"><BsPlayCircleFill className="text-white text-3xl transition ease-in-out hover:text-red-500 hover:scale-125"/></div>
               </div>
             );
           })}
         </div>
-        {/* <div>play</div> */}
       </div>
     </div>
   );
