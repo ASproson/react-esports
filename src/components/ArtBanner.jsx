@@ -6,7 +6,7 @@ const dimensionArtBanner =
 
 const ArtBanner = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-8">
       <div className="">
         <img
           src={dimensionArtBanner}
