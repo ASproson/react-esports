@@ -51,19 +51,19 @@ const Connect = () => {
   ];
 
   return (
-    <div className="font-valorantStandard -mt-[100px] md:w-[600px] mx-auto">
+    <div className="font-valorantStandard -mt-[100px] md:w-[600px]">
       {/* Header Text */}
       <div className="flex justify-between pl-6 pr-6 text-3xl">
-        <div className="transition ease-in-out hover:text-red-500 hover:scale-105">Vods</div>
-        <div className="transition ease-in-out hover:text-red-500 hover:scale-105">View All</div>
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer">Vods</div>
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer">View All</div>
       </div>
 
       {/* Team VOD List */}
       <div className="flex justify-between text-white">
-        <div className="w-full">
+        <div className="w-full md:w-[600px]">
           {vodList.map((match) => {
             return (
-              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md">
+              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px]">
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
                     <img src={match.leftIcon} className="h-10 w-10" /> <span className="text-sm ml-5 mr-5">vs</span>
@@ -74,7 +74,7 @@ const Connect = () => {
                     <p>{match.rightTeam}</p>
                   </div>
                 </div>
-                <div className="flex items-center mr-6"><BsPlayCircleFill className="text-white text-3xl transition ease-in-out hover:text-red-500 hover:scale-125"/></div>
+                <div className="flex items-center mr-6"><BsPlayCircleFill className="text-white text-3xl transition ease-in-out hover:text-red-500 hover:scale-125 cursor-pointer"/></div>
               </div>
             );
           })}
