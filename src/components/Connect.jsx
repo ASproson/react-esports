@@ -66,8 +66,8 @@ const Connect = () => {
               <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px]">
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
-                    <img src={match.leftIcon} className="h-10 w-10" /> <span className="text-sm ml-5 mr-5">vs</span>
-                    <img src={match.rightIcon} className="h-10 w-10" />
+                    <img src={match.leftIcon} alt="team icon" className="h-10 w-10" /> <span className="text-sm ml-5 mr-5">vs</span>
+                    <img src={match.rightIcon} alt="team icon" className="h-10 w-10" />
                   </div>
                   <div className="ml-6">
                     <p>{match.leftTeam}</p>
