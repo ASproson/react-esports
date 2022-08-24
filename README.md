@@ -2,11 +2,12 @@
 
 Hello there! This a portfolio project I made that focuses on building a slick, modern landing page for an eSports website. 
 
-You can view the live deployment [here](https://asproson.github.io/react-esports/) (under construction)
+You can view the live deployment [here](https://asproson.github.io/react-esports/)
 
 ## Tech Used
 
 - React
+- React Icons
 - Tailwind CSS
 
 ## Installation
