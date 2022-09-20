@@ -33,14 +33,14 @@ const HeroBanner = () => {
         </div>
       </div>
 
-      <div className="WatchLiveButtonContainer absolute left-1/2 transform -translate-x-1/2 top-[75%] sm:top-[50%] md:top-[70%] lg:top-[70%] xl:top-[55%] hover:cursor-pointer">
+      <div className="WatchLiveButtonContainer absolute left-1/2 transform -translate-x-1/2 top-[75%] sm:top-[50%] md:top-[70%] lg:top-[70%] xl:top-[55%] hover:cursor-pointer group">
         <div className="White Brackets">
           <div className="Top border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -top-[10px]"></div>
           <div className="Bottom border-b-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -bottom-[10px]"></div>
         </div>
 
         <div className="RedBox bg-red-500 h-[60px] w-[238px]">
-          <p className=" text-white uppercase font-bold text-sm absolute left-1/2 -translate-x-1/2 top-[18px] transition hover:cursor-pointer hover:duration-200 hover:scale-110 ease-in-out">
+          <p className=" text-white uppercase font-bold text-sm absolute left-1/2 -translate-x-1/2 top-[18px] transition hover:cursor-pointer duration-300 group-hover:scale-125 ease-in-out">
             Watch Live
           </p>
           <div className="smallBoxesWithinWatchLiveTopLeft absolute bg-black h-[3px] w-[3px]"></div>
