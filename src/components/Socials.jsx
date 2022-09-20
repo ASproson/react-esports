@@ -22,7 +22,6 @@ const Socials = () => {
       name: "Twitch",
       icon: "https://assets.valorantesports.com/val/twitch.696cd8ca21.svg",
     },
-
   ];
 
   return (
