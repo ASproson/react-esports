@@ -27,8 +27,8 @@ const Socials = () => {
   return (
     <div className="font-valorantStandard md:w-[600px]">
       {/* Header Text */}
-      <div className="flex justify-between pl-6 pr-6 text-3xl">
-        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer">
+      <div className="flex justify-between pl-6 pr-6 text-3xl group">
+        <div className="transition ease-in-out group-hover:text-red-500 group-hover:scale-105 cursor-pointer">
           Connect
         </div>
       </div>
