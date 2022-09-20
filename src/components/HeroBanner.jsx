@@ -40,7 +40,7 @@ const HeroBanner = () => {
         </div>
 
         <div className="RedBox bg-red-500 h-[60px] w-[238px]">
-          <p className=" text-white uppercase font-bold text-sm absolute left-1/2 hover:transform -translate-x-1/2 top-[18px] hover:cursor-pointer hover:duration-200 hover:scale-110">
+          <p className=" text-white uppercase font-bold text-sm absolute left-1/2 -translate-x-1/2 top-[18px] transition hover:cursor-pointer hover:duration-200 hover:scale-110 ease-in-out">
             Watch Live
           </p>
           <div className="smallBoxesWithinWatchLiveTopLeft absolute bg-black h-[3px] w-[3px]"></div>
