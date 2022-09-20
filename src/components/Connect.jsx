@@ -39,15 +39,6 @@ const Connect = () => {
       leftTeam: "KRU Esports",
       rightTeam: "FNATIC",
     },
-    {
-      id: 5,
-      leftIcon:
-        "https://am-a.akamaihd.net/image?resize=70:70&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2F1652174377471_X10C_Logo_Color.png",
-      rightIcon:
-        "https://am-a.akamaihd.net/image?resize=70:70&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2F1647451114220_M3C_logo_square.png",
-      leftTeam: "X10C ESPORT",
-      rightTeam: "M3C",
-    },
   ];
 
   return (
@@ -63,7 +54,7 @@ const Connect = () => {
         <div className="w-full md:w-[600px]">
           {vodList.map((match) => {
             return (
-              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px]">
+              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px] group">
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
                     <img src={match.leftIcon} alt="team icon" className="h-10 w-10" /> <span className="text-sm ml-5 mr-5">vs</span>
@@ -74,7 +65,7 @@ const Connect = () => {
                     <p>{match.rightTeam}</p>
                   </div>
                 </div>
-                <div className="flex items-center mr-6"><BsPlayCircleFill className="text-white text-3xl transition ease-in-out hover:text-red-500 hover:scale-125 cursor-pointer"/></div>
+                <div className="flex items-center mr-6"><BsPlayCircleFill className="text-white text-3xl transition ease-in-out group-hover:text-red-500 group-hover:scale-125 cursor-pointer"/></div>
               </div>
             );
           })}
