@@ -1,6 +1,6 @@
 import { BsPlayCircleFill } from "react-icons/bs";
 
-export const SocialsCard = ({ match, id }) => {
+export const VodCard = ({ match, id }) => {
   return (
     <div
       key={id}
