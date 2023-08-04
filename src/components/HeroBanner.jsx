@@ -1,9 +1,6 @@
-import React from "react";
-import "../App.css";
+import { VideoPlayer } from "./VideoPlayer";
 
 export const HeroBanner = () => {
-  const videoUrl =
-    "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt714eaee50b90fc27/62cc7dcc6a8fb133b0ff7e55/VALORANT_ANNO22_SHATTERED_16x9_27s.mp4";
   return (
     <div className="bg-black  w-full h-[600px] sm:h-fit relative">
       <div className="whiteLines">
@@ -47,18 +44,7 @@ export const HeroBanner = () => {
           <div className="smallBoxesWithinWatchLiveBottomRight absolute bottom-0 right-0 bg-black h-[3px] w-[3px]"></div>
         </div>
       </div>
-
-      <div className="vidBackground -z-10">
-        <video
-          controls
-          autoPlay
-          muted
-          loop
-          className="pointer-events-none h-[100%] w-[100%]  sm:-mt-[100px] md:-mt-[150px]"
-        >
-          <source src={videoUrl} type="video/mp4" />
-        </video>
-      </div>
+      <VideoPlayer />
     </div>
   );
 };
