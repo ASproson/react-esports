@@ -1,4 +1,4 @@
-import { VodCard } from "./VodCard";
+import { SocialsCard } from "./SocialsCard";
 import { VOD_LIST } from "../lib/VOD_LIST";
 
 export const Connect = () => {
@@ -18,7 +18,7 @@ export const Connect = () => {
       <div className="flex justify-between text-white">
         <div className="w-full md:w-[600px]">
           {VOD_LIST.map((match) => {
-            return <VodCard match={match} />;
+            return <SocialsCard match={match} key={match.id} />;
           })}
         </div>
       </div>
