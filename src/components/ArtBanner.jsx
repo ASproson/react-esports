@@ -1,6 +1,3 @@
-import React from "react";
-import "../App.css";
-
 const dimensionArtBanner =
   "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte6088e7599a28fd3/62b4ac17919dfb0f9bf00456/REV_Valorant_2022_E5A1_PlayVALORANT_PlayValorantHomepage_3440x1020_MB02.jpg";
 
@@ -23,20 +20,22 @@ export const ArtBanner = () => {
           dimension
         </p>
 
-        <div className="WatchLiveButtonContainer absolute left-[2.2%] sm:left-[1.2%] transform top-[140px] sm:top-[170px] hover:cursor-pointer md:-ml-3 lg:-ml-4 group">
-          <div className="White Brackets">
-            <div className="Top border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -top-[10px]"></div>
-            <div className="Bottom border-b-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -bottom-[10px]"></div>
-          </div>
+        {/* Find Out More */}
+        <button className="absolute left-[2.2%] sm:left-[1.2%] transform top-[140px] sm:top-[170px] hover:cursor-pointer md:-ml-3 lg:-ml-4 group">
+          {/* White Brackets*/}
+          <div className="Top border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -top-[10px]"></div>
+          <div className="Bottom border-b-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -bottom-[10px]"></div>
 
-          <div className="RedBox bg-red-500 h-[60px] w-[238px]">
-            <button className="text-white uppercase font-bold text-sm absolute left-1/2 hover:transform -translate-x-1/2 top-[18px] hover:duration-200 group-hover:scale-110 ease-in-out transition">
+          {/* Find Out More Button */}
+          <div className="bg-red-500 h-[60px] w-[238px]">
+            <span className="text-white uppercase font-bold text-sm absolute left-1/2 hover:transform -translate-x-1/2 top-[18px] hover:duration-200 group-hover:scale-110 ease-in-out transition">
               Find out more
-            </button>
+            </span>
+            {/* Small black box details */}
             <div className="smallBoxesWithinWatchLiveTopLeft absolute bg-black h-[3px] w-[3px]"></div>
             <div className="smallBoxesWithinWatchLiveBottomRight absolute bottom-0 right-0 bg-black h-[3px] w-[3px]"></div>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   );
