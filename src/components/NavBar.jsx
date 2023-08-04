@@ -7,7 +7,7 @@ export const NavBar = () => {
 
   return (
     <div className="navContainer flex bg-black h-20 justify-between sticky z-50">
-      <div className="leftNav flex mr-6 text-white items-center ml-14">
+      <div className="leftNav flex mr-6 text-white items-center ml-14 ">
         <img
           src={logoLink}
           alt="Valorant logo"
