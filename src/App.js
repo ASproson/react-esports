@@ -8,7 +8,7 @@ import Socials from "./components/Socials";
 
 function App() {
   return (
-    <div className="">
+    <>
       <NavBar />
       <HeroBanner />
       <LatestNews />
@@ -24,7 +24,7 @@ function App() {
           champions are made
         </h1>
       </div>
-    </div>
+    </>
   );
 }
 
