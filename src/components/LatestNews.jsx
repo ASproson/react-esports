@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../App.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
-const LatestNews = () => {
+export const LatestNews = () => {
   const [readMore, setReadMore] = useState(3);
   const [readMoreClicked, setReadMoreClicked] = useState(false);
 
@@ -152,5 +152,3 @@ const LatestNews = () => {
     </div>
   );
 };
-
-export default LatestNews;

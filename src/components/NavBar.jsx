@@ -1,7 +1,7 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavBar = () => {
+export const NavBar = () => {
   const navList = [
     {
       id: 1,
@@ -32,7 +32,7 @@ const NavBar = () => {
       <div className="leftNav flex mr-6 text-white items-center ml-14">
         <img
           src={logoLink}
-          alt='Valorant logo'
+          alt="Valorant logo"
           className="h-10 w-10 transition duration-200 hover:scale-150 cursor-pointer"
         />
       </div>
@@ -52,5 +52,3 @@ const NavBar = () => {
     </div>
   );
 };
-
-export default NavBar;

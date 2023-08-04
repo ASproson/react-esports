@@ -1,7 +1,7 @@
 import React from "react";
-import { BsPlayCircleFill } from 'react-icons/bs'
+import { BsPlayCircleFill } from "react-icons/bs";
 
-const Connect = () => {
+export const Connect = () => {
   const vodList = [
     {
       id: 1,
@@ -45,8 +45,12 @@ const Connect = () => {
     <div className="font-valorantStandard -mt-[100px] md:w-[600px]">
       {/* Header Text */}
       <div className="flex justify-between pl-6 pr-6 text-3xl">
-        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer w-full">Vods</div>
-        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer w-full text-right">View All</div>
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer w-full">
+          Vods
+        </div>
+        <div className="transition ease-in-out hover:text-red-500 hover:scale-105 cursor-pointer w-full text-right">
+          View All
+        </div>
       </div>
 
       {/* Team VOD List */}
@@ -54,18 +58,32 @@ const Connect = () => {
         <div className="w-full md:w-[600px]">
           {vodList.map((match) => {
             return (
-              <div key={match.id} className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px] group">
+              <div
+                key={match.id}
+                className="flex justify-between mt-4 mb-4 ml-6 mr-6 bg-gray-800 rounded-md h-[80px] group"
+              >
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
-                    <img src={match.leftIcon} alt="team icon" className="h-10 w-10" /> <span className="text-sm ml-5 mr-5">vs</span>
-                    <img src={match.rightIcon} alt="team icon" className="h-10 w-10" />
+                    <img
+                      src={match.leftIcon}
+                      alt="team icon"
+                      className="h-10 w-10"
+                    />{" "}
+                    <span className="text-sm ml-5 mr-5">vs</span>
+                    <img
+                      src={match.rightIcon}
+                      alt="team icon"
+                      className="h-10 w-10"
+                    />
                   </div>
                   <div className="ml-6">
                     <p>{match.leftTeam}</p>
                     <p>{match.rightTeam}</p>
                   </div>
                 </div>
-                <div className="flex items-center mr-6"><BsPlayCircleFill className="text-white text-3xl transition ease-in-out group-hover:text-red-500 group-hover:scale-125 cursor-pointer"/></div>
+                <div className="flex items-center mr-6">
+                  <BsPlayCircleFill className="text-white text-3xl transition ease-in-out group-hover:text-red-500 group-hover:scale-125 cursor-pointer" />
+                </div>
               </div>
             );
           })}
@@ -74,5 +92,3 @@ const Connect = () => {
     </div>
   );
 };
-
-export default Connect;

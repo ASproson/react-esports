@@ -1,6 +1,6 @@
 import React from "react";
 
-const Socials = () => {
+export const Socials = () => {
   const socialLinks = [
     {
       id: 1,
@@ -44,8 +44,14 @@ const Socials = () => {
               >
                 <div className="flex ml-4 p-4">
                   <div className="flex items-center">
-                    <img src={link.icon} alt="social media icon" className="h-10 w-10 transition ease-in-out group-hover:scale-110 cursor-pointer" />
-                    <span className="text-2xl mt-1 ml-10 transition ease-in-out group-hover:text-red-500 group-hover:scale-110 cursor-pointer">{link.name}</span>
+                    <img
+                      src={link.icon}
+                      alt="social media icon"
+                      className="h-10 w-10 transition ease-in-out group-hover:scale-110 cursor-pointer"
+                    />
+                    <span className="text-2xl mt-1 ml-10 transition ease-in-out group-hover:text-red-500 group-hover:scale-110 cursor-pointer">
+                      {link.name}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -56,5 +62,3 @@ const Socials = () => {
     </div>
   );
 };
-
-export default Socials;
