@@ -3,7 +3,7 @@ import { SocialCard } from "./SocialCard";
 
 export const Socials = () => {
   return (
-    <div className="font-valorantStandard md:w-[600px]">
+    <section className="font-valorantStandard md:w-[600px]">
       <div className="flex justify-between pl-6 pr-6 text-3xl group">
         <div className="transition ease-in-out group-hover:text-red-500 group-hover:scale-105 cursor-pointer">
           Connect
@@ -17,6 +17,6 @@ export const Socials = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
