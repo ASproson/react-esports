@@ -13,7 +13,7 @@ export const Socials = () => {
       <div className="flex justify-between text-white">
         <div className="w-full md:w-[600px]">
           {SOCIALS.map((social, id) => {
-            return <SocialCard social={social} id={id} />;
+            return <SocialCard social={social} id={id} key={id} />;
           })}
         </div>
       </div>
