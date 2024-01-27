@@ -39,7 +39,9 @@ export const LatestNews = () => {
 
         <section className="Latest Articles lg:w-[1250px] lg:grid lg:grid-cols-3 gap-1 -mt-[140px] relative mx-auto">
           {ARTICLES.slice(0, readMore).map((article) => {
-            return <Article article={article} id={article.id} />;
+            return (
+              <Article article={article} id={article.id} key={article.id} />
+            );
           })}
         </section>
         <div className="Show More Button w-[115px] mx-auto mt-8">
