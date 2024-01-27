@@ -74,7 +74,7 @@ const WatchLive = () => {
 /**
  * @returns Brackets to encase the WatchLive button container
  */
-const WhiteBrackets = () => {
+export const WhiteBrackets = () => {
   return (
     <>
       <div className="border-t-2 border-l-2 border-r-2 border-white opacity-70 h-[30px] w-[255px] absolute -left-[9px] -top-[10px]"></div>
@@ -87,7 +87,7 @@ const WhiteBrackets = () => {
  * @param position
  * @returns Square black cut outs
  */
-const SquareCutOut = ({ position }) => {
+export const SquareCutOut = ({ position }) => {
   return (
     <div className={`absolute ${position} bg-black h-[3px] w-[3px]`}></div>
   );
