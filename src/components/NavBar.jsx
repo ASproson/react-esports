@@ -7,7 +7,7 @@ const logoLink = "https://img.icons8.com/color/452/valorant.png";
 export const NavBar = () => {
   return (
     <div className="navContainer flex bg-black h-20 justify-between sticky z-50">
-      <div className="leftNav flex mr-6 text-white items-center ml-14 ">
+      <div className="leftNav flex mr-6 text-white items-center ml-14">
         <img
           src={logoLink}
           alt="Valorant logo"
@@ -15,9 +15,10 @@ export const NavBar = () => {
         />
       </div>
       <div className="rightNav flex space-x-6 text-[#8FA3B0] items-center mr-14 uppercase font-bold text-sm">
-        {NAV_LIST.map((navEl) => {
-          return <NavElement navEl={navEl} id={navEl.id} />;
-        })}
+        {NAV_LIST.map((navEl) => (
+          <NavElement navEl={navEl} id={navEl.id} />
+        ))}
+        {/* TODO: Place NavElement map inside of the dropdown on click */}
         <GiHamburgerMenu className="h-7 w-7 sm:hidden transition duration-200 hover:scale-125 hover:text-red-500 ease-in cursor-pointer mt-2" />
       </div>
     </div>
