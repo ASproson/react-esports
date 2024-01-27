@@ -8,7 +8,7 @@ export const VodCard = ({ match, id }) => {
     >
       <div className="flex ml-4 p-4">
         <div className="flex items-center">
-          <img src={match.leftIcon} alt="team icon" className="h-10 w-10" />{" "}
+          <img src={match.leftIcon} alt="team icon" className="h-10 w-10" />
           <span className="text-sm ml-5 mr-5">vs</span>
           <img src={match.rightIcon} alt="team icon" className="h-10 w-10" />
         </div>
