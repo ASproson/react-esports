@@ -16,7 +16,7 @@ export const NavBar = () => {
       </div>
       <div className="rightNav flex space-x-6 text-[#8FA3B0] items-center mr-14 uppercase font-bold text-sm">
         {NAV_LIST.map((navEl) => (
-          <NavElement navEl={navEl} id={navEl.id} />
+          <NavElement navEl={navEl} id={navEl.id} key={navEl.id} />
         ))}
         {/* TODO: Place NavElement map inside of the dropdown on click */}
         <GiHamburgerMenu className="h-7 w-7 sm:hidden transition duration-200 hover:scale-125 hover:text-red-500 ease-in cursor-pointer mt-2" />
