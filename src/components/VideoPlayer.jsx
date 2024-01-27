@@ -3,7 +3,7 @@ const videoUrl =
 
 export const VideoPlayer = () => {
   return (
-    <div className="vidBackground -z-10">
+    <div className="-z-10">
       <video
         controls
         autoPlay
