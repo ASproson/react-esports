@@ -2,9 +2,9 @@ import { NavElement } from "./NavElement";
 import { NAV_LIST } from "../lib/NAV_LIST";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export const NavBar = () => {
-  const logoLink = "https://img.icons8.com/color/452/valorant.png";
+const logoLink = "https://img.icons8.com/color/452/valorant.png";
 
+export const NavBar = () => {
   return (
     <div className="navContainer flex bg-black h-20 justify-between sticky z-50">
       <div className="leftNav flex mr-6 text-white items-center ml-14 ">
